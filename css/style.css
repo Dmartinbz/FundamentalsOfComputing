@@ -291,6 +291,7 @@ p {
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
+  text-shadow: black 0.1em 0.1em 0.1em;
 }
 #showcase h1:nth-child(1) {
   animation-delay: 1s;
