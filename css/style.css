@@ -563,16 +563,10 @@ button {
   margin-bottom: 20px;
 }
 
-#about .col-right .cta {
-  color: black;
-  margin-bottom: 50px;
-  padding: 10px 20px;
-  font-size: 2rem;
-}
-
 #about .col-left .about-img {
   height: 100%;
   width: 100%;
+  top: -5%;
   position: relative;
   border: 10px solid white;
 }
@@ -586,6 +580,59 @@ button {
   width: 98%;
   border: 7px solid #0088a9;
   z-index: -1;
+}
+
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per {
+  height: 10px;
+  background-color: #0088a9;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
 }
 /* End About Section */
 
