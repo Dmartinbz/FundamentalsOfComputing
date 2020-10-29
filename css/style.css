@@ -974,7 +974,8 @@ button {
     text-align: center;
   }
   #infos .bmi-cal button {
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: bold;
   }
   /* END BMI Calculator */
 
