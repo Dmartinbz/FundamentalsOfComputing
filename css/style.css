@@ -410,15 +410,14 @@ p {
   margin: 0 auto;
 }
 #infos .info2-bottom {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin: 0px 50px;
 }
+
 #infos .info2-item {
   flex-basis: 80%;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -458,13 +457,14 @@ p {
 
 #infos .cta {
   color: black;
-  padding: 5px 20px;
+  padding: 3px 20px;
+  margin: 1px 2px;
   font-size: 100%;
-  outline: none;
   border-radius: 12px;
   text-decoration: none;
   cursor: pointer;
 }
+
 button {
   border: none;
   background-color: transparent;
@@ -921,6 +921,62 @@ button {
   }
 
   /* End About */
+
+  /* BMI Calculator */
+  #infos .bmi-cal {
+    background-color: white;
+    position: relative;
+    width: 600px;
+    min-height: 500px;
+    margin: 40px;
+  }
+
+  #infos .bmi-cal::before {
+    content: "";
+    position: absolute;
+    background-color: #0088a9;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+  }
+
+  #infos .bmi-cal hr {
+    background: #0088a9;
+    height: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #infos .bmi-cal h1 {
+    font-size: 25px;
+    background-color: #0088a9;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  #infos .bmi-cal label {
+    font-size: 20px;
+    color: #0088a9;
+    margin-left: 5%;
+    font-weight: bold;
+  }
+
+  #infos .bmi-cal input {
+    font-size: 30px;
+    margin: 10px 5%;
+    width: 90%;
+    text-align: center;
+  }
+  #infos .bmi-cal button {
+    font-size: 25px;
+  }
+  /* END BMI Calculator */
 
   /* contact  */
   #contact .contact {
