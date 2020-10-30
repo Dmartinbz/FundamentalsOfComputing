@@ -929,6 +929,14 @@ button {
   /* End About */
 
   /*Hex to bin*/
+  #undctable {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eee;
+    padding: 8px;
+    margin-top: 15px;
+  }
+
   .ucdcinput {
     width: 200px;
     padding: 8px;
