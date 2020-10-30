@@ -475,6 +475,7 @@ button {
   border: none;
   background-color: transparent;
   outline: none;
+  list-style: none;
 }
 /* info 2 section ends */
 
@@ -930,7 +931,7 @@ button {
 
   /*Hex to bin*/
   #undctable {
-    border: 1px solid #ccc;
+    border: 2px solid#0088a9;
     border-radius: 4px;
     background-color: #eee;
     padding: 8px;
@@ -940,7 +941,7 @@ button {
   .ucdcinput {
     width: 200px;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 20px;
   }
 
@@ -950,10 +951,12 @@ button {
 
   .bigtext h2 {
     text-align: right;
+    margin-right: 10px;
   }
 
   .bigtext h3 {
     text-align: left;
+    margin-left: 10px;
   }
 
   .ucresulttext {
