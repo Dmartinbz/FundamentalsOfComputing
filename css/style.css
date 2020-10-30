@@ -928,6 +928,32 @@ button {
 
   /* End About */
 
+  /*Hex to bin*/
+  .ucdcinput {
+    width: 200px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+
+  .bigtext {
+    font-size: 18px;
+  }
+
+  .bigtext h2 {
+    text-align: right;
+  }
+
+  .bigtext h3 {
+    text-align: left;
+  }
+
+  .ucresulttext {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  /* End Hex to bin */
+
   /* BMI Calculator */
   #infos .bmi-cal {
     background-color: white;
