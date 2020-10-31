@@ -51,21 +51,21 @@
           <tr>
             <td class="bigtext"><h2>From: </h2></td>		
             <td ><input type="text" name="ucfrom" class="ucdcinput" id="ucfrom" onKeyUp="ucDCUpdateResult(0);" autofocus></td>
-            <td class="bigtext" ><b><h3>hexadecimal</h3></b></td>
+            <td class="bigtext" ><b><h3>Hexadecimal</h3></b></td>
           </tr>
           <br>
           <tr>
             <td class="bigtext"><h2>To: </h2></td>		
             <td ><input type="text" name="ucto" class="ucdcinput" id="ucto" onKeyUp="ucDCUpdateResult(1);"></td>
-            <td class="bigtext" ><b><h3>binary</h3></b></td>
+            <td class="bigtext" ><b><h3>Binary</h3></b></td>
           </tr>
           <tr>
               <td>&nbsp;</td><td>
                 <input type="hidden" name="ucfromunit" id="ucfromunit" value="hexadecimal [3:16]">
                 <input type="hidden" name="uctounit" id="uctounit" value="binary [3:2]">		
                 <br>	
-                <button type="submit" value="Convert" class="cta" onclick="ucDCUpdateResult(processingType);return false;">Convert</button> &nbsp;
-              <button type="reset" value="Clear" class="cta">Clear</button>
+                <button type="submit" value="Convert" class="cta" onclick="ucDCUpdateResult(processingType);return false;"><h4>Convert</h4></button> &nbsp;
+              <button type="reset" value="Clear" class="cta"><h4>Clear</h4></button>
             </td>
         </table>
         <div id="ucresult" class="ucresulttext"></div>

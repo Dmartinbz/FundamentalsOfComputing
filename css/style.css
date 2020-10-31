@@ -943,6 +943,7 @@ button {
     padding: 8px;
     border-radius: 10px;
     font-size: 20px;
+    outline: 0;
   }
 
   .bigtext {
@@ -952,6 +953,10 @@ button {
   .bigtext h2 {
     text-align: right;
     margin-right: 10px;
+  }
+
+  .cta h4 {
+    font-size: 11px;
   }
 
   .bigtext h3 {
