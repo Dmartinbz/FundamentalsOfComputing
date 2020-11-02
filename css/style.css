@@ -937,7 +937,7 @@ button {
     padding: 8px;
     margin-top: 15px;
   }
-
+  /*margin-bottom: -90%;*/
   .ucdcinput {
     width: 200px;
     padding: 8px;
@@ -970,7 +970,21 @@ button {
   }
   /* End Hex to bin */
 
-  /* */
+  /* Unicode */
+  .unicode {
+    border: 2px solid#0088a9;
+    border-radius: 4px;
+    background-color: #eee;
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .unicode h2 {
+    font-size: 18px;
+  }
+
   .column {
     margin-top: -250px;
     float: left;
@@ -984,7 +998,7 @@ button {
     display: table;
     clear: both;
   }
-  /* End */
+  /* End unicode */
 
   /* BMI Calculator */
   #infos .bmi-cal {
