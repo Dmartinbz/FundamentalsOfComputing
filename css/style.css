@@ -933,7 +933,6 @@ button {
   #undctable {
     border: 2px solid#0088a9;
     border-radius: 4px;
-    background-color: #eee;
     padding: 8px;
     margin-top: 15px;
   }
@@ -941,9 +940,14 @@ button {
   .ucdcinput {
     width: 200px;
     padding: 8px;
-    border-radius: 10px;
     font-size: 20px;
     outline: 0;
+    background: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0088a9;
+    width: 200px;
   }
 
   .bigtext {
@@ -971,32 +975,91 @@ button {
   /* End Hex to bin */
 
   /* Unicode */
-  .unicode {
+  #infos .row {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #infos .column {
+    width: 350px;
+    margin: -50px 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+
+  #infos .column img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
     border: 2px solid#0088a9;
-    border-radius: 4px;
-    background-color: #eee;
-    padding: 8px;
-    margin-top: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
   }
 
-  .unicode h2 {
-    font-size: 18px;
+  #infos .column:hover {
+    transform: scale(1.3);
+    z-index: 2;
   }
 
-  .column {
-    margin-top: -250px;
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    border: 2px solid #0088a9;
-  }
-
-  .row::after {
+  #infos .row::after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  #infos .top {
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+  }
+
+  #infos .text {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #infos .info {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #infos .unicode-con {
+    border: 2px solid#0088a9;
+    width: 500px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 450px;
+  }
+
+  #infos .unicode-con input {
+    font-size: 30px;
+    margin: 10px 5%;
+    width: 90%;
+    background: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0088a9;
+    width: 200px;
+  }
+
+  #infos .res {
+    color: #0088a9;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #infos .unicode-con button {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
   }
   /* End unicode */
 
@@ -1049,13 +1112,81 @@ button {
     font-size: 30px;
     margin: 10px 5%;
     width: 90%;
+    background: none;
     text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0088a9;
+    width: 400px;
   }
+
   #infos .bmi-cal button {
     font-size: 15px;
     font-weight: bold;
   }
   /* END BMI Calculator */
+
+  /* ASCII Calculator */
+  #infos .pic1 {
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    position: relative;
+  }
+
+  #infos .top {
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+  }
+
+  #infos .text {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #infos .info {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #infos .ascii-con {
+    border: 2px solid#0088a9;
+    width: 500px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 450px;
+  }
+
+  #infos .ascii-con input {
+    font-size: 30px;
+    margin: 10px 5%;
+    width: 90%;
+    background: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0088a9;
+    width: 200px;
+  }
+
+  #infos .res {
+    color: #0088a9;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #infos .ascii-con button {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  /* END ASCII Calculator */
 
   /* contact  */
   #contact .contact {
@@ -1160,5 +1291,17 @@ button {
   .team-section .team-items .item {
     flex-basis: calc(100%);
     max-width: calc(100%);
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .bmi-cal {
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 1px solid #0088a9;
   }
 }

@@ -36,34 +36,39 @@
     </section>
     <!-- End Header -->
 
-    <!-- BMI Section -->
+    <!-- ascii Section -->
     <section id="infos">
       <div class="infos container">
         <div class="info-top">
-          <h1 class="section-title">BMI <span>CALCULATOR</span></h1>
-          <h2>JavaScript in action(BMI CALCULATOR)</h2>
+          <h1 class="section-title">UNICODE <span>CONVERTER</span></h1>
+          <h2>JavaScript in action(UNICODE CONVERTER)</h2>
           <p>.</p>
         </div>
 
-        <div class="bmi-cal">
-            <form name="bmiForm">
-              <h1>BMI CALCULATOR</h1>
-              <hr>
-              <label for="">Your Weight (Ibs)</label>
-              <input type="text" name="weight" placeholder="Enter your weight" size="10" class="weight"><br />
-              <label for="">Your Height (Inches)</label>
-              <input type="text" name="height" placeholder="Enter your height" size="10" class="height"><br />
-              <button type="button" value="Calculate BMI" class="cta" onClick="calculateBmi()">Calculate BMI</button><br />
-              <label for="" class="name">Your BMI</label>
-              <input type="text" name="bmi" size="10"><br />
-              <label for="" class="name">This Means</label>
-              <input type="text" name="meaning" size="25"><br />
-              <button type="reset" class="cta" value="Reset" />Reset</button>
-              </form>
+        <div class="row">
+          <div class="column">
+           <img src="./img/uni1.jpg" alt="img" width="100%" />
+          </div>
+  
+          <div class="column">
+           <img src="./img/uni3.jpg" alt="img" width="100%" />
+          </div>
+  
+          <div class="column">
+           <img src="./img/uni4.jpg" alt="img" width="100%" />
+          </div>
+      </div>
+
+        <div class="unicode-con">
+              <h3 class="top">UNICODE CONVERTER</h3>
+              <p class="text">Enter any Unicode Number from above:</p>
+              <input type="text" id="num1">
+              <p id="result" class="res"></p>
+              <button id="btn" class="cta" onclick="UniCon()">Submit</button>
             </div>
           </div>
     </section>
-    <!-- End BMI Section -->
+    <!-- End ascii Section -->
   
 
 <!-- Footer -->

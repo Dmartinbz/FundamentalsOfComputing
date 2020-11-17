@@ -36,34 +36,30 @@
     </section>
     <!-- End Header -->
 
-    <!-- BMI Section -->
+    <!-- ascii Section -->
     <section id="infos">
       <div class="infos container">
         <div class="info-top">
-          <h1 class="section-title">BMI <span>CALCULATOR</span></h1>
-          <h2>JavaScript in action(BMI CALCULATOR)</h2>
+          <h1 class="section-title">ASCII <span>CONVERTER</span></h1>
+          <h2>JavaScript in action(ASCII CONVERTER)</h2>
           <p>.</p>
         </div>
 
-        <div class="bmi-cal">
-            <form name="bmiForm">
-              <h1>BMI CALCULATOR</h1>
-              <hr>
-              <label for="">Your Weight (Ibs)</label>
-              <input type="text" name="weight" placeholder="Enter your weight" size="10" class="weight"><br />
-              <label for="">Your Height (Inches)</label>
-              <input type="text" name="height" placeholder="Enter your height" size="10" class="height"><br />
-              <button type="button" value="Calculate BMI" class="cta" onClick="calculateBmi()">Calculate BMI</button><br />
-              <label for="" class="name">Your BMI</label>
-              <input type="text" name="bmi" size="10"><br />
-              <label for="" class="name">This Means</label>
-              <input type="text" name="meaning" size="25"><br />
-              <button type="reset" class="cta" value="Reset" />Reset</button>
-              </form>
+       <div class="pic1">
+        <img src="./img/ascii.png" alt="img" />
+       </div>
+
+        <div class="ascii-con">
+              <h3 class="top">ASCII CONVERTER</h3>
+              <p class="info">Enter any number from 0 to 127</p>
+              <p class="text">NUMBER:</p>
+              <input type="text" id="num">
+              <p id="result" class="res"></p>
+              <button id="btn" class="cta" onclick="Ascii()">Submit</button>
             </div>
           </div>
     </section>
-    <!-- End BMI Section -->
+    <!-- End ascii Section -->
   
 
 <!-- Footer -->

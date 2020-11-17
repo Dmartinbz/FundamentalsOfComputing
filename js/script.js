@@ -240,3 +240,17 @@ function myFunction() {
   
   document.getElementById("demo").innerHTML = unicode;
 }
+
+function Ascii() {
+	var num = document.getElementById('num').value;
+	var result = String.fromCharCode(num);
+	document.getElementById("result").innerHTML = result;
+	console.log(result);
+}
+
+function UniCon() {
+	var num1 = document.getElementById('num1').value;
+	text = num1;
+	uniCode = ("&#x" + num1)
+	document.getElementById("result").innerHTML = uniCode;
+}
